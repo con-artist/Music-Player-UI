@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ninja tunes</title>
+    <!-- this stylesheet is for css of home page -->
+    <link rel="stylesheet" href="musicplayer_home.css" />
+    <!-- this stylesheet is for responsive behaviour of home page -->
+    <link rel="stylesheet" href="home-responisve-sheet.css">
+    <!-- this is the main stylesheet -->
+    <!-- this script is for font awesome icons -->
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- top navigation bar -->
+    <nav class="navigation-bar">
+      <!--This div contains the logo and title of the page-->
+      <div class="title">
+        <div class="website-logo">
+          <i
+            class="fas fa-play-circle fa-spin"
+            style="--fa-animation-duration: 0s"
+          ></i>
+        </div>
+        <div class="website-name">Ninja Studios</div>
+      </div>
+      <!--This div contains the favourites section of the page-->
+      <div class="fav">
+        <h4>Favourites</h4>
+      </div>
+      <!--This div contains the search-bar on the top  of the page-->
+      <div class="search">
+        <!-- this div contain the microphone icon ,search-bar and the search icon -->
+        <div class="search-combo">
+          <!-- this is for search-icon -->
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <input type="search" id="search-bar" placeholder="Search " />
+          <!-- this is for microphone icon-->
+          <div class="micro">
+            <i class="fas fa-microphone"></i>
+          </div>
+        </div>
+      </div>
+      <!-- this is for notification bell -->
+      <div class="notification-bell">
+        <img src="media/bell_icon.png" />
+        <span class="notification"> Notifications</span>
+      </div>
+      <!-- this is for profile picture-->
+      <div class="profile-picture">
+        <img src="media/profile_picture.png" />
+      </div>
+    </nav>
+    <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+    
+    <main>
+      <!-- this is a icon for responsive nature when width is less than 850px -->
+      <label for="more" class="reponsive-playlist-button"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="more" class="checkbox-2">
+
+      <!-- this is the left part of the main section -->
+      <!-- I have separated these sections using the aside tag for each section -->
+      <aside class="aside section-left">
+        <!-- this is for the carousel -->
+        <div class="outer-carousel">
+          <div class="carousel">
+            <!-- these are the 3 images in the carousel -->
+            <img id="carousel-img1" src="media/crousel/carousel1.jpg" />
+            <img id="carousel-img2" src="media/crousel/carousel2.jpg" />
+            <img id="carousel-img3" src="media/crousel/carousel3.jpg" />
+          </div>
+        </div>
+        <!-- this is the latest release section -->
+        <!-- it will contain the "cards" -->
+        <div class="latest-release">
+          <h1 style="margin: 2vw 0vw">Latest Release</h1>
+          <div class="latest-release-content">
+            <!-- first card -->
+            <div class="card">
+              <div>
+                <!-- image corresponding to the card -->
+                <img src="media/songs/willow.jpeg" />
+                <!-- play button, which will be shown on hover on the card image -->
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <!-- div to display the song name and date of release -->
+              <div class="song-name">
+                <h3>Willow</h3>
+                <p>May , 2020</p>
+              </div>
+              <!-- if someone clicks on the three dots, options will be shown to the user for further action -->
+              <div class="options">
+                <label for="latest-release-checkbox1"
+                  ><i class="fas fa-ellipsis-h" style="float: right"></i
+                ></label>
+                <input type="checkbox" class="checkbox-1" id="latest-release-checkbox1" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <!-- duration of the song -->
+                <p>2:55</p>
+              </div>
+            </div>
+            <!-- second card -->
+            <div class="card">
+              <div>
+                <img src="media/songs/shit.png" />               
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="song-name">
+                <h3>Wap</h3>
+                <p>Sep , 2020</p>
+              </div>
+              <div class="options">
+                <label for="latest-release-checkbox2"
+                  ><i class="fas fa-ellipsis-h" style="float: right"></i
+                ></label>
+                <input type="checkbox" class="checkbox-1" id="latest-release-checkbox2" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <p>4:35</p>
+              </div>
+            </div>
+            <!-- third card -->
+            <div class="card">
+              <div>
+                <img src="media/songs/Weeknd.jpg" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="song-name">
+                <h3>Blinding Lights</h3>
+                <p>Feb , 2020</p>
+              </div>
+              <div class="options">
+                <label for="latest-release-checkbox3"
+                  ><i class="fas fa-ellipsis-h" style="float: right"></i
+                ></label>
+                <input type="checkbox" class="checkbox-1" id="latest-release-checkbox3" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">                  
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <p>3:45</p>
+              </div>
+            </div>
+            <!-- fourth card -->
+            <div class="card">
+              <div>
+                <img src="media/songs/dynamite.jpg" />
+
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="song-name">
+                <h3>Dynamite</h3>
+                <p>Aug , 2020</p>
+              </div>
+              <div class="options">
+                <label for="latest-release-checkbox4"
+                  ><i class="fas fa-ellipsis-h" style="float: right"></i
+                ></label>
+                <input type="checkbox" class="checkbox-1" id="latest-release-checkbox4" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <p>3:00</p>
+              </div>
+            </div>
+            <!-- Fifth card -->
+            <div class="card">
+              <div>              
+                <img src="media/songs/falling.jpg" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="song-name">
+                <h3>Falling</h3>
+                <p>Nov , 2020</p>
+              </div>
+              <div class="options">
+                <label for="latest-release-checkbox5"
+                  ><i class="fas fa-ellipsis-h" style="float: right"></i
+                ></label>
+                <input type="checkbox" class="checkbox-1" id="latest-release-checkbox5" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <p>3:35</p>
+              </div>
+            </div>
+            <!-- sixth card -->
+            <div class="card">
+              <div>
+                <img src="media/songs/DaBaby.jpg" />
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="song-name">
+                <h3>ROCKSTAR</h3>
+                <p>Dec , 2020</p>
+              </div>
+              <div class="options">
+                <label for="latest-release-checkbox6"
+                  ><i class="fas fa-ellipsis-h" style="float: right"></i
+                ></label>
+                <input type="checkbox" class="checkbox-1" id="latest-release-checkbox6" />
+                <div class="latest-release-dropdown">
+                  <div class="drop-item">
+                    <p>
+                      <i class="fas fa-play-circle"></i>
+                      <a href="Single Playlist Screen.html">Play Now</a>
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                  </div>
+                  <hr />
+                  <div class="drop-item">
+                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                  </div>
+                </div>
+                <p>4:35</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- this is the popular artists section -->
+        <div class="popular-artists">
+          <div class="popular-artists-heading"><h1>Popular Artists</h1></div>
+          <!-- this contains the content of the popular artists section -->
+          <div class="popular-artists-content">
+            <!-- first artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/adele.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Adele</p>
+              </div>
+            </a>
+            <!-- second artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/eminem.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Eminem</p>
+              </div>
+            </a>
+            <!-- third artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/sixnine.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>6ix9ine</p>
+              </div>
+            </a>
+            <!-- fourth artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/posty.png" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Post Malone</p>
+              </div>
+            </a>
+            <!-- fifth artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/drake.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Drake</p>
+              </div>
+            </a>
+            <!-- sixth artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/Camila Cabello.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Camila Cabello</p>
+              </div>
+            </a>
+            <!-- seventh artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/billie eilish.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Billie Eilish</p>
+              </div>
+            </a>
+            <!-- eighth artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/bruno mars.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Bruno Mars</p>
+              </div>
+            </a>
+            <!-- ninth artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/Katy perry.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Katy Perry</p>
+              </div>
+            </a>
+            <!-- tenth artist -->
+            <a href="Single Playlist Screen.html">
+              <div class="popular-artists-images">
+                <img src="media/popular artists/ed sheeran.jpg" />
+                <div class="popular-artists-play">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Ed Sheeran</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- this is the music theme sesction with gradiant colour-->
+        <div class="music-themes">
+          <!-- this is the 3 coloured boxes one by the other -->
+          <div class="stations">
+            <div id="station-1">
+              <div id="station-2">
+                <div id="station-3">
+                  <img src="media/website_logo.png" />
+                  <p>Stations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- theses are the different themes  -->
+          <!-- there colour chanages on hover -->
+          <div class="themes">
+            <!-- first theme -->
+            <div class="music-themes-content">
+              <img src="media/music themes/chill.jpg" />
+              <p>Vibe</p>
+            </div>
+            <!-- second theme -->
+            <div class="music-themes-content">
+              <img src="media/music themes/rock.jpg" />
+              <p>Rock</p>
+            </div>
+            <!-- third theme -->
+            <div class="music-themes-content">
+              <img src="media/music themes/love.jpg" />
+              <p>Love</p>
+            </div>
+            <!-- fourth theme -->
+            <div class="music-themes-content">
+              <img src="media/music themes/pop.jpg" />
+              <p>Pop</p>
+            </div>
+            <!-- fifth theme -->
+            <div class="music-themes-content">
+              <img src="media/music themes/retro.jpg" />
+              <p>Retro</p>
+            </div>
+            <!-- sixed theme -->
+            <div class="music-themes-content">
+              <img src="media/music themes/workout.jpg" />
+              <p>GYM</p>
+            </div>
+          </div>
+        </div>
+        <!-- this is the second music theme section -->
+        <div class="music-themes-2">
+          <div class="theme-outer-div">
+            <div class="theme-inner-div">
+              <p>Party</p>
+            </div>
+          </div>
+          <div class="theme-outer-div">
+            <div class="theme-inner-div">
+              <p>Electronic</p>
+            </div>
+          </div>
+          <div class="theme-outer-div">
+            <div class="theme-inner-div">
+              <p>Travel</p>
+            </div>
+          </div>
+        </div>
+        <!-- this section contains the songs in english and hindi -->
+        <!-- "lastest-lang class is common to both hindi and english sections" --> 
+        <!-- in this way redundancy is handled. considering the re-usability of the code -->
+        <div class="latest-lang">
+          <!-- for english songs -->
+          <div class="latest-English-heading"><h1>Latest English</h1></div>
+          <div class="latest-lang-content">
+            <div class="latest-lang-songs">
+              <img src="media/latest english/I'll Wait.jpg" />
+              <p>I'll Wait</p>
+              <p>Jan 14, 2014</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest english/let me go.jpg" />
+              <p>Let me Go!</p>
+              <p>Jul 16, 2017</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest english/qurantine clean.jpg" />
+              <p>Qurantine Clean</p>
+              <p>Aug 12, 2018</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest english/roar.jpg" />
+              <p>Roar</p>
+              <p>Sep 16, 2019</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest english/toosie slide.jpg" />
+              <p>Toosie Slide</p>
+              <p>Feb 18, 2014</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest english/uptown funk.png" />
+              <p>Uptown Funk</p>
+              <p>Aug 15, 2015</p>
+            </div>
+          </div>
+        </div>
+        <!-- from here the sesction for hindi songs begins -->
+        <div class="latest-lang">
+          <div class="latest-Hindi-heading"><h1>Latest Hindi</h1></div>
+          <div class="latest-lang-content">
+            <div class="latest-lang-songs">
+              <img src="media/latest hindi/baarish.jpeg" />
+              <p>Baarish</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest hindi/giveme some sunshine.jpg" />
+              <p> Sunshine</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest hindi/kaun tujhe.jpg" />
+              <p>Kaun Tujhe</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest hindi/tere sang yara.jpg" />
+              <p>Tere Sang Yaara</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest hindi/galiyaan.jpg" />
+              <p>Galiyaan</p>
+              <p>Aug 11, 2017</p>
+            </div>
+            <div class="latest-lang-songs">
+              <img src="media/latest hindi/tera ban jaunga.jpg" />
+              <p>Tera Ban Jaunga</p>
+              <p>Aug 11, 2017</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- one aside section is complete -->
+      <!-- now the second aside section will start from here -->
+
+
+      <!-- this section is responsive and will collape on reducing the width beyond 850 px -->
+      <!-- a 3 bar icon will appear on the right hand side which can be used to access this section  aftaer the with is less than 850px -->
+      <!-- here starts the section 2 of our page -->
+      <aside class="aside section-right" id="right-section">
+        <!-- this is the section heading part -->
+        <div class="right-section-heading">
+          <div class="playlist-heading"><h1>Playlist</h1></div>
+          <div class="queue-heading">
+            <a href="#queue-option-box"><p>Queue</p></a>
+            <a href="#queue-option-box"><i
+                class="fas fa-chevron-circle-down"
+                style="color: greenyellow"
+              ></i></a>
+          </div>
+        </div>
+        <!-- this is the queue box which will be shown when the user clicks on the Queue button -->
+        <!-- it will have 3 options, playlists, favourite songs and Close button. it will close when one clicks on the close button. -->
+          <div class="queue-options" id="queue-option-box">
+            <p><a href style="color:#007bff; font-weight:bolder;">Playlists</a></p>
+            <hr>
+            <p><a href style="color:#007bff; font-weight:bolder;">Favourites </a></p>
+            <hr>
+            <p><a href="#" style="color:red; font-weight:bolder;">Close</a></p>
+        </div>
+             <!-- this section contains the playist queue -->
+        <div class="queue-section">
+           <!-- first playlist item -->
+          <div class="queue-content">
+             <!-- index -->
+            <div class="queue-serial-no">01</div>
+            <div>
+              <img src="media/songs/falling.jpg" />
+            </div>
+            <!-- this play button will be visible on hovering over the song's image -->
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <!-- song name and release date -->
+            <div class="queue-song-name">
+              <h3>Falling</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <!-- this is the heart icon will changes colour on hovering over this playlist item -->
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- second playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">02</div>
+            <div>
+              <img src="media/songs/dynamite.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>Dynamite</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- third playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">03</div>
+            <div>
+              <img src="media/songs/DaBaby.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>DaBaby</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- fourth playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">04</div>
+            <div>
+              <img src="media/songs/willow.jpeg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>Willow</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+           <!-- fifth playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">05</div>
+            <div>
+              <img src="media/songs/sorry.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>Sorry</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+           <!-- sixth playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">06</div>
+            <div>
+              <img src="media/latest english/I'll Wait.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>I'll Wait</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+           <!-- seventh playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">07</div>
+            <div>
+              <img src="media/latest english/qurantine clean.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>Qurantine</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+           <!-- seigthh playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">08</div>
+            <div>
+              <img src="media/songs/havana.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>Havana</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+           <!-- ninth playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">09</div>
+            <div>
+              <img src="media/latest english/ily.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>Ily</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- thenth playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">10</div>
+            <div>
+              <img src="media/latest english/roar.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3>Roar</h3>
+              <h3>Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- eleventh playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">11</div>
+            <div>
+              <img src="media/latest english/toosie slide.jpg" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3 style="margin-top: 0.5vw;">Toosie Slide</h3>
+              <h3 style="margin-top: 0.5vw;">Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+          <!-- twelveth playlist item -->
+          <div class="queue-content">
+            <div class="queue-serial-no">12</div>
+            <div>
+              <img src="media/latest english/uptown funk.png" />
+            </div>
+            <div class="queue-play-button">
+              <i class="fas fa-play icon-position"></i>
+            </div>
+            <div class="queue-song-name">
+              <h3 style="margin-top: 0.5vw;">Uptown Funk</h3>
+              <h3 style="margin-top: 0.5vw;">Nov,2020</h3>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- the second section ends here -->
+    </main>
+    <!-- main part of the page is over. -->
+    <!-- this is the footer part. -->
+    <!-- its position will be fixed to the screen bottom. -->
+    <footer>
+      <div class="active-song-description">
+          <!-- song image -->
+          <div id="song-image">
+              <img src="media/latest english/ily.jpg">
+          </div>
+          <!-- song name and author -->
+          <div class="song-desc">
+              <div>
+                Qurantine
+              </div>
+              <div>
+                  Jan 2018
+              </div>
+              <!-- heart icon and ban icon -->
+          </div>
+          <div class="heart-and-ban-icon">
+              <span>
+                  <i class="far fa-heart"></i>
+              </span>
+              <span>
+                  <i class="fas fa-ban"></i>
+              </span>
+          </div>
+      </div>
+      <!-- these are the main player controls -->
+      <div class="player">
+          <div class="controls">
+              <div><i class="fas fa-random"></i></div>
+              <div><i class="fas fa-step-backward"></i></div>
+              <div><i class="fas fa-pause-circle"></i></div>
+              <div><i class="fas fa-step-forward"></i></div>
+              <div><i class="fas fa-redo"></i></div>
+          </div>
+          <!-- this is the slider -->
+          <div id="slider">
+              <!-- current time -->
+              <div class="time">
+                  1:39
+              </div>
+              <div class="slidecontainer">
+                  <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+              </div>
+              <!-- total time -->
+              <div class="time">
+                  4:44
+              </div>
+          </div>
+      </div>
+      <!-- other icons including the volume slider and all -->
+      <div class="extras">
+          <div>
+              <i class="fas fa-list-ul"></i>
+          </div>
+          <div>
+              <i class="fas fa-laptop"></i>
+          </div>
+          <div>
+              <i class="fas fa-volume-up"></i>
+          </div>
+          <div class="slidecontainer" id="volume-slider" style="width:30%;">
+              <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+              <!-- this script to change the colour of the slider bar on moving -->
+              <script>
+                  document.getElementById("myRange").oninput = function() {
+                   var value = (this.value-this.min)/(this.max-this.min)*100
+                   this.style.background = 'linear-gradient(to right, #82CFD0 0%, #82CFD0 ' + value + '%, #fff ' + value + '%, white 100%)'
+                     };
+              </script>
+          </div>
+          <div>
+              <i class="fas fa-expand-alt"></i>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>

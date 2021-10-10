@@ -1,0 +1,102 @@
+@media screen and (max-width: 1000px){
+    .fav {
+		display: none !important;
+	}
+    #search-bar {
+        width: 40vw;
+        border-radius: 20px;
+        padding: 6px 26px 7px 36px;
+        text-decoration: none;
+    }
+    .notification{
+        display: none;
+    }
+}
+@media screen and (max-width: 850px){
+    .reponsive-playlist-button{
+        opacity: 1;
+        z-index: 3;
+    }
+    .checkbox-2 {
+        display: none;
+        }
+        /* checking it, will trigger the plylist dropdown */
+        .checkbox-2:checked ~ .section-right {
+            opacity: 1;
+            z-index: 2;
+        }
+
+    .section-right {
+        width: 29%;
+    height: auto;
+    position: absolute;
+    right: 0vw;
+    top: 6vw;
+    z-index: -1;
+    opacity: 0;
+    border: 1px solid black;
+    background-color: rgb(23, 19, 44)
+    }
+    .queue-content{
+        border: 1px solid black;
+    }
+    .queue-section{
+          height: 59vh;
+    }
+    .playlist-heading h1{
+        margin-bottom: 0.5vw;
+    }
+    .queue-heading{
+        bottom: 0vw;
+        font-size: 2vw;
+    }
+    .section-left{
+        width: 90%;
+        margin: 0vw 2vw;
+    }
+    .carousel {
+        display: flex;
+        justify-content: space-around;
+        width: 78%;
+        margin: auto;
+        height: 19vw;
+    }
+    .popular-artists-images img{
+        margin: 0vw 3vw;
+    }
+    .music-themes {
+        width: 76%;
+        margin: 2vw auto;
+    }
+    .music-themes-2{
+        width: 90%;
+        margin: 2vw auto;
+    }
+    .theme-inner-div{
+        background-size: 22vw 15vw;
+    }
+    .theme-outer-div {
+        height: 15vw;
+    width: 22vw;
+    }
+    footer{
+        height: 10vh;
+    }
+   
+    #volume-slider{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px){
+    .latest-lang-content{
+        width: 75%;
+        margin: auto;
+    }
+    .latest-lang-songs{
+        margin: 0.5vw 4vw;
+    }
+    .section-left{
+        height: 77vh;
+    }
+   
+}
