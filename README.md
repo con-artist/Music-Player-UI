@@ -30,12 +30,6 @@ The repository contains :
 ![](Screenshots/Screenshot%201.png)
 
 
-![](Screenshots/Screenshot%202.png)
-
-
-![](Screenshots/Screenshot%203.png)
-
-
 Playlist Screen :
 
 
